@@ -8,12 +8,18 @@
  * Compile with: gcc -O2 ramhog.c -o ramhog
  */
 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <signal.h>
 #include <time.h>
+
+#ifdef _WIN32
+#include <windows.h>
+#else
+#include <signal.h>
 #include <unistd.h>
+#endif
 
 /* Default configuration */
 #define DEFAULT_CHUNK_SIZE_MB 100
@@ -53,6 +59,9 @@ void print_usage(const char *program_name);
 int parse_arguments(int argc, char *argv[], config_t *config);
 void signal_handler(int signum);
 void setup_signal_handling(void);
+#ifdef _WIN32
+BOOL WINAPI win_signal_handler(DWORD signal);
+#endif
 int expand_chunks_array(void);
 int allocate_chunk(void);
 void cleanup_and_exit(int exit_code);
@@ -161,19 +170,34 @@ void signal_handler(int signum) {
     g_state.running = 0;
 }
 
+#ifdef _WIN32
+    BOOL WINAPI win_signal_handler(DWORD signal) {
+        if (signal == CTRL_C_EVENT || signal == CTRL_CLOSE_EVENT || signal == CTRL_BREAK_EVENT || signal == CTRL_SHUTDOWN_EVENT) {
+            printf("\nReceived termination signal. Shutting down gracefully...\n");
+            g_state.running = 0;
+            return TRUE;
+        }
+        return FALSE;
+    }
+#endif
+
 /* Setup signal handling for graceful shutdown */
 void setup_signal_handling(void) {
-    signal(SIGINT, signal_handler);   /* Ctrl+C */
-    signal(SIGTERM, signal_handler);  /* Termination request */
+    #ifdef _WIN32
+        SetConsoleCtrlHandler(win_signal_handler, TRUE);
+    #else
+        signal(SIGINT, signal_handler);   /* Ctrl+C */
+        signal(SIGTERM, signal_handler);  /* Termination request */
+    #endif
 }
 
 /* Cross-platform sleep function */
 void cross_platform_sleep_ms(int milliseconds) {
-#ifdef _WIN32
-    Sleep(milliseconds);
-#else
-    usleep(milliseconds * 1000);  /* usleep takes microseconds */
-#endif
+    #ifdef _WIN32
+        Sleep((DWORD)milliseconds);
+    #else
+        usleep(milliseconds * 1000);  /* usleep takes microseconds */
+    #endif
 }
 
 /* Expand the chunks array when it's full */
